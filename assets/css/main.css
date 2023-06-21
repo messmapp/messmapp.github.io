@@ -4534,7 +4534,7 @@ input, select, textarea {
 			/* FontAwesome for working BootSnippet :> */
 
 			#team {
-			    background: #1c1d26 !important;
+			    background: inherit !important;
 					color: black;
 			}
 
