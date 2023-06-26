@@ -3534,7 +3534,7 @@ input, select, textarea {
 
 		#banner:after {  /* HERE change the transparency of the BKG for the banner */
 			background-image: -moz-linear-gradient(bottom, rgba(23, 24, 32, 0.05), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(bottom, rgba(23, 24, 32, 0.25), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(bottom, rgba(23, 24, 32, 0.00), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(bottom, rgba(23, 24, 32, 0.25), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: linear-gradient(bottom, rgba(23, 24, 32, 0.05), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			content: '';
