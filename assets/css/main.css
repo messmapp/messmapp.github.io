@@ -2622,8 +2622,8 @@ input, select, textarea {
 
 			.imageNO.half img{
 				width: 70%;
-				width: 400px,
-		      height: auto
+				width: 400px;
+		    	height: auto
 			}
 
 /* List */
@@ -3514,7 +3514,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/ESA_MM_astronomy.jpg");
+		background-image: url("../../images/Banner_AGN_leo_v2.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3534,7 +3534,7 @@ input, select, textarea {
 
 		#banner:after {  /* HERE change the transparency of the BKG for the banner */
 			background-image: -moz-linear-gradient(bottom, rgba(23, 24, 32, 0.05), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(bottom, rgba(23, 24, 32, 0.25), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(bottom, rgba(23, 24, 32, 0.00), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(bottom, rgba(23, 24, 32, 0.25), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: linear-gradient(bottom, rgba(23, 24, 32, 0.05), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			content: '';
@@ -4534,7 +4534,7 @@ input, select, textarea {
 			/* FontAwesome for working BootSnippet :> */
 
 			#team {
-			    background: #eee !important;
+			    background: inherit !important;
 					color: black;
 			}
 
@@ -4557,7 +4557,7 @@ input, select, textarea {
 
 						/* Add some shadows to create a card effect */
 						.card {
-						  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+						  box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.2);
 						}
 
 						/* Some left and right padding inside the container */
