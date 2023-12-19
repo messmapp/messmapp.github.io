@@ -4641,19 +4641,6 @@ input, select, textarea {
 						height: 500px;
 						perspective: 1290px;
 						}
-
-							@media screen and (max-width: 600px) {
-								.flip-card-container {
-									padding: 1%; /* Adjust the padding for smaller screens */
-								}
-							}
-						
-							@media screen and (min-width: 601px) and (max-width: 1200px) {
-								.flip-card-container {
-									padding: 5%; /* Adjust the padding for medium-sized screens */
-								}
-							}
-
 							@media screen and (min-width: 1201px) and (max-width: 1600px) {
 								.flip-card-container {
 									transform: translateX(16%); /* Adjust the padding for medium-sized screens */
