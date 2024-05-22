@@ -4794,6 +4794,14 @@ input, select, textarea {
 							z-index: -1;
 						}
 
+						.shifted-image12 {
+							position: absolute;
+							top: 0%; 
+							left: 0%; 
+							transform: translate(-10%, -10%);
+							z-index: -1;
+						}
+
 
 						.detail-text {
 							margin-top: -40%;
