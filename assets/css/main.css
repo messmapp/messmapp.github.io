@@ -4706,6 +4706,14 @@ input, select, textarea {
 						padding: 0 8px
 						}
 
+						.shifted-image {
+							position: absolute;
+							top: 0%; 
+							left: 0%; 
+							transform: translate(-0%, 0%);
+							z-index: -1;
+						}
+
 						.shifted-image1 {
 							position: absolute;
 							top: 0%; 
