@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html  lang="en-us"></html>
+    <head>
+		<title>Main | MessMapp Homepage</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="MessMapp homepage. Project PI: Dr. Sara Buson, Professor at Chair for Astronomy, University of Wuerzburg, Germany." />
+    	<meta name="keywords" content="MessMapp, Sara Buson, scientist, astrophysicist, professor, multimessenger, multiwavelength, blazar, neutrino, erc, high-energy" />
+    	<meta name="author" content="Sara Buson" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="google-site-verification" content="dBAqKab-eXYfJytblZ2Mo2miKCJmGRPrvzNJMeSo7hg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">Home</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="group.html">About the Team</a></li>
+					<li>
+						<a href="research.html">Research</a>
+						<ul>
+							<li><a href="research.html">Research Focus</a></li>
+							<li><a href="research.html#Publications">Publications</a></li>
+						</ul>
+					</li>
+                    <li><a href="IceCubePy.html">IceCubePy</a></li>
+					<li>
+						<a href="news.html">News</a>
+						<ul>
+							<li><a href="news.html">Latest News</a></li>
+							<li><a href="news.html">News Archive</a></li>
+						</ul>
+					</li>
+					<!--<li><a href="news_position_ad.html">Job Opportunities</a></li>-->
+					<li><a href="mailto:sara.buson@uni-wuerzburg.de" class="icon solid alt fa-envelope"><span class="label"></span></a></li>
+				</ul>
+			</nav>
+		</header>
+
+        <div id="main" class="wrapper style1">
+		<div class="container">
+			<header class="major">
+				<h2>Welcome to IceCubePy</h2>
+				<p>An open-source, Python framework to perform general maximum likelihood analysis of IceCube point-source data. <br>
+                The content displayed below is powered by the <a href="https://github.com/messmapp/icecubepy-public">public GitHub repository</a>.
+                </p>
+			</header>
+
+			<!-- Content -->
+			<section id="content">
+                <div id="readme">
+
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script>
+                const repoBase = "https://raw.githubusercontent.com/messmapp/icecubepy-public/main/";
+
+                fetch("https://raw.githubusercontent.com/messmapp/icecubepy-public/main/README.md")
+                .then(response => response.text())
+                .then(text => {
+                    let html = marked.parse(text);
+
+                    // Fix relative image paths -> point to GitHub raw
+                    html = html.replace(/<img src="(?!http)(.*?)"/g, (match, p1) => {
+                    return `<img src="${repoBase}${p1}"`;
+                    });
+
+                    document.getElementById("readme").innerHTML = html;
+                })
+                .catch(err => {
+                    document.getElementById("readme").innerHTML = "<p>Failed to load README.</p>";
+                    console.error(err);
+                });
+                </script>
+                </div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
